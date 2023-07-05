@@ -1,0 +1,16 @@
+
+
+entity Employee {
+  salary Double
+}
+
+entity Department {
+  name String
+}
+relationship OneToOne {
+    Employee{user} to User
+}
+
+relationship OneToMany{
+    Department to Employee{department}
+}
